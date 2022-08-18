@@ -1,2 +1,4 @@
 # d-code
-d-code, which is actually pronounced decode, is running vscode in docker container. Maybe a better name for this repo is cind like dind or kind :| :)  (just for fun :D) 
+This repo is just for fun, but if one day you need the VS code inside the container, you can use it.
+
+I will also write the steps to set it up so that you can have it on your containers... for easier use and testing, you can also use the included Docker file :)
