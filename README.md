@@ -3,7 +3,17 @@ This repo is just for fun, but if one day you need the VS code inside the contai
 
 I will also write the steps to set it up so that you can have it on your containers... for easier use and testing, you can also use the included Docker file :)
 
+Now the image is availabe on dockerhub in arsalanyavari/d-code repo
+
+
 ### initiation this project
+#### method 0:
+1. Clone repository
+2. Store the output of `xauth list` command on your host machine
+3. Run docker-compose up -d
+4. `docker exec -it DockerVScode bash` then pass the output of [step2] as an input for `xauth add` command on a container
+5. Run code on container and enjoy =)
+
 #### method 1:
 1. At the first clone the repository
 2. Then build the image using Dockerfile with `docker build` command
