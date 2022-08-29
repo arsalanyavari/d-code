@@ -8,8 +8,8 @@ Now the image is availabe on dockerhub in arsalanyavari/d-code repo
 
 ### initiation this project
 #### method 0:
-After clonning the repository, install Docker, docker-compose and GNUmake,
-Then run command: ```make``` ```make clean``` 
+After clonning the repository, install Docker, docker-compose and GNUmake
+You can use two these commands: ```make``` ```make clean``` 
 
 If you want configure step by step folliw below steps:
 1. Run ```make inti```
