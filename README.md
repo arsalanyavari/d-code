@@ -8,13 +8,18 @@ Now the image is availabe on dockerhub in arsalanyavari/d-code repo
 
 ### initiation this project
 #### method 0:
+After clonning the repository, install Docker, docker-compose and GNUmake,
+Then run this command: ```make && docker-compose up --build -d && docker exec -it DockerVScode code --no-sandbox --user-data-dir=/home```
+
+
+#### method 1:
 1. Clone repository
 2. Store the output of `xauth list` command on your host machine
 3. Run docker-compose up -d
 4. `docker exec -it DockerVScode bash` then pass the output of [step2] as an input for `xauth add` command on a container
 5. Run code on container and enjoy =)
 
-#### method 1:
+#### method 2:
 1. At the first clone the repository
 2. Then build the image using Dockerfile with `docker build` command
 3. Store the output of `xauth list` command on your host machine
