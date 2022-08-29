@@ -5,11 +5,16 @@ services:
     image: d-code:latest
     build: .
     container_name: "DockerVScode"
+    env_file:
+      - .env
     environment:
       - DISPLAY=${DISPLAY}
+      - XAUTH=${XAUTH}
     volumes:
       - /tmp/.X11-unix:/tmp/.X11-unix
+      - /var/run/docker.sock:/var/run/docker.sock
     network_mode: host
+    command: /bin/bash -c "xauth add $XAUTH && while true; do true; done"
     tty: true
 
     restart: on-failure
