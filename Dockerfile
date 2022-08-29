@@ -14,3 +14,10 @@ do echo "alias code='code --no-sandbox --user-data-dir=/home'" >> $i; done
 
 # NOTE #  Enable below line if you dont use docker-compose
 #ENV DISPLAY ":0"
+
+
+# RUN apt-get -y install cron \
+# && echo "* * * * * if ! [[ `xauth list` ]]; then xauth add \$XAUTH; fi" > /etc/cron.d/xauth-cron \
+# && chmod 0644 /etc/cron.d/xauth-cron \
+# && crontab /etc/cron.d/xauth-cron
+# CMD xauth add $XAUTH && while true; do true; done
