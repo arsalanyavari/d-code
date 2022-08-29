@@ -9,7 +9,13 @@ Now the image is availabe on dockerhub in arsalanyavari/d-code repo
 ### initiation this project
 #### method 0:
 After clonning the repository, install Docker, docker-compose and GNUmake,
-Then run this command: ```make && docker-compose up --build -d && docker exec -it DockerVScode code --no-sandbox --user-data-dir=/home```
+Then run command: ```make``` ```make clean``` 
+
+If you want configure step by step folliw below steps:
+1. Run ```make inti```
+2. Run ```docker-compose up --build -d 1> /dev/null```
+3. Run ```docker exec -it DockerVScode code --no-sandbox --user-data-dir=/home```
+4. Also using ```docker-compose down for downing the service```
 
 
 #### method 1:
